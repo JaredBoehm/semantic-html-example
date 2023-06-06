@@ -1,0 +1,48 @@
+<!DOCTYPE html> <!-- !DOCTYPE is used to inform the browser what document type to expect, what version of html -->
+<html lang="en"> <!-- declares the language of the webpage for search engines and browsers -->
+<head> <!-- a container for metadata, such as the title, scripts, and stylesheets; not visible to end users -->
+    <meta charset="UTF-8"> <!-- character encoding of the html document, UTF-8 covers almost all of the characters, symbols, and punctuation in the world -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- this is for internet explorer compatibility, read more here: https://learn.microsoft.com/en-us/openspecs/ie_standards/ms-iedoco/380e2488-f5eb-4457-a07a-0cb1b6e4b4b5 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- allows control over the viewport, setting the page width to the width of the users device, and the initial zoom to 1.0, read more here: https://www.w3schools.com/css/css_rwd_viewport.asp -->
+    <title>Semantic HTML Example and Template</title> <!-- required for all html documents, for more information about and tips for making a good title, read here: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title -->
+</head>
+<body> <!-- this will contain all the contents of your html document -->
+
+    <!-- 
+        3 reason to use semantic tags instead of divs:
+        1) easier to read / scan the HTML
+        2) better for SEO
+        3) better for screen readers / accessibility
+
+        Thanks to ByteGrad for this list and other helpful information: https://www.youtube.com/watch?v=bOUhq46fd5g
+    -->
+
+    <header> <!-- Introductory content, logo, nav, etc  -->
+        <img src="logo.png" alt="Website Logo">
+        <nav> <!-- Most important navigation content/links on the page -->
+            <ul> 
+                <li>
+                    <a href="#">Navigation Link</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <main> <!-- Dominant content of the page -->
+        <section> <!-- used to define sections of content within the page -->
+            <h1>Very Important Header</h1>
+            <p>Paragraph content for nice, smooth, easy, and enjoyable reading at your leisure.</p>
+        </section>
+
+        <section>
+            <h2>About Heading Tags</h2>
+            <p>When it comes to heading tags (don't confuse them with the <code><header></code> tag!), like <code><h1></code>, there are six levels of importance, with h1 being the most and h6 being the least.</p>
+        </section>
+    </main>
+    
+    <footer> <!-- Legal, author, copyright, related links/documents -->
+        © Nobody, 2023
+    </footer>
+</body>
+</html>
