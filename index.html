@@ -19,7 +19,7 @@
 
     <header> <!-- Introductory content, logo, nav, etc  -->
         <img src="logo.png" alt="Website Logo">
-        <nav> <!-- Most important navigation content/links on the page -->
+        <nav> <!-- Most important navigation content/links on the page, can also exist outside of the header if it is important navigation -->
             <ul> 
                 <li>
                     <a href="#1">Navigation Link</a>
@@ -31,6 +31,9 @@
         </nav>
     </header>
     
+    <aside>
+        <!-- Side bar, related but not focus content -->
+    </aside>
 
     <main> <!-- Dominant content of the page -->
         <section> <!-- used to define sections of content within the page -->
@@ -42,10 +45,22 @@
             <h2>About Heading Tags</h2>
             <p>When it comes to heading tags like <code>&lt;h1&gt;</code> (don't confuse them with the <code>&lt;header&gt;</code> tag!), there are six levels of importance, with h1 being the most and h6 being the least.</p>
         </section>
+
+        <article>
+            <!-- Generally content that if placed in isolation, wouldn't loose any meaning - self contained, explains itself  -->
+        </article>
     </main>
     
     <footer> <!-- Legal, author, copyright, related links/documents -->
         © Nobody, 2023
+        <ul>
+            <li>
+                <a href="#Legal">Legal</a>
+            </li>
+            <li>
+                <a href="#rss">RSS Feed</a>
+            </li>
+        </ul>
     </footer>
 </body>
 </html>
